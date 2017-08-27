@@ -110,23 +110,25 @@ demo = {
         /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
         var dataEmailsSubscriptionChart = {
-          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
           series: [
-            [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+            [54, 44, 32]
 
-          ]
+          ],
+          labels: ['Inicial', 'Actual', 'Meta']
+
         };
         var optionsEmailsSubscriptionChart = {
             axisX: {
                 showGrid: false
             },
             low: 0,
-            high: 1000,
+
+            high: 125,
             chartPadding: { top: 0, right: 5, bottom: 0, left: 0}
         };
         var responsiveOptions = [
           ['screen and (max-width: 640px)', {
-            seriesBarDistance: 5,
+            seriesBarDistance: 10,
             axisX: {
               labelInterpolationFnc: function (value) {
                 return value[0];
