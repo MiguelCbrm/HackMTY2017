@@ -61,10 +61,10 @@ demo = {
         /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
         dataDailySalesChart = {
-            labels: ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2022', '2024', '2026', '2028', '2030'],
+            labels: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2022', '2024', '2026', '2028', '2030'],
             series: [
-                [140,124,145,112,123,111,154, 130, 140, 120, 130, 150, 130, 140],
-                [180,164,135,122,153,131,114, 132, 150, 140, 140, 140, 140, 150]
+                [15,20,25],
+                [15,13,11,9,7, 6, 5, 4, 3, 2, 1, 0]
 
             ]
         };
@@ -73,8 +73,8 @@ demo = {
             lineSmooth: Chartist.Interpolation.cardinal({
                 tension: 0
             }),
-            low: 100,
-            high: 200, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+            low: 0,
+            high: 30, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
             chartPadding: { top: 0, right: 0, bottom: 0, left: 0},
         }
 
