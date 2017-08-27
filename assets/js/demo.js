@@ -38,7 +38,7 @@ demo = {
         dataDailySalesChart = {
             labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
             series: [
-                [120,124,145,212,123,111,154]
+                [140,124,145,212,123,111,154]
             ]
         };
 
@@ -61,9 +61,11 @@ demo = {
         /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
         dataDailySalesChart = {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            labels: ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2022', '2024', '2026', '2028', '2030'],
             series: [
-                [120,124,145,112,123,111,154]
+                [140,124,145,112,123,111,154, 130, 140, 120, 130, 150, 130, 140],
+                [180,164,135,122,153,131,114, 132, 150, 140, 140, 140, 140, 150]
+
             ]
         };
 
@@ -110,23 +112,25 @@ demo = {
         /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
         var dataEmailsSubscriptionChart = {
-          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
           series: [
-            [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+            [54, 44, 32]
 
-          ]
+          ],
+          labels: ['Inicial', 'Actual', 'Meta']
+
         };
         var optionsEmailsSubscriptionChart = {
             axisX: {
                 showGrid: false
             },
             low: 0,
-            high: 1000,
+
+            high: 125,
             chartPadding: { top: 0, right: 5, bottom: 0, left: 0}
         };
         var responsiveOptions = [
           ['screen and (max-width: 640px)', {
-            seriesBarDistance: 5,
+            seriesBarDistance: 10,
             axisX: {
               labelInterpolationFnc: function (value) {
                 return value[0];
